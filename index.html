@@ -147,9 +147,11 @@
 
 </head>
 <body>
+	<!-- main content -->
 	<h1>Welcome to Ball in a Box!!</h1>
 	<h2>How many tickets would you like to spend?</h2>
 
+	<!-- invisible table for buttons -->
 	<table border="0" cellspacing="2" align="center">
 		<tr>
 			<td>
@@ -166,18 +168,36 @@
 	<script type="text/javascript">
 		let type = 0; 
 	</script>
-	<!-- main content -->
 
 	<script type="text/javascript">
 		 $(document.body).append( "<h1> there is no user </h1>" );
+		 /*Variables are false because button has not been clicked */
 		let sevenTickets = false;
 		let fourteenTickets = false;
-		let twentyOneTickets = false; 
+		let twentyOneTickets = false;
+
+		//If user clicked 7 tickets 
 		document.getElementById('sevenTickets').onclick = function() {
 			alert("type 1 game");
 			sevenTickets = true;
 			if (sevenTickets) {
-				let stage = 7;
+				let stage = 1;
+			}
+		};
+		//If user clicked 14 tickets 
+		document.getElementById('fourteenTickets').onclick = function() {
+			alert("type 2 game");
+			fourteenTickets = true;
+			if (fourteenTickets) {
+				let stage = 2;
+			}
+		};
+		//If user clicked 21 tickets 
+		document.getElementById('twentyOneTickets').onclick = function() {
+			alert("type 3 game");
+			twentyOneTickets = true;
+			if (twentyOneTickets) {
+				let stage = 3;
 			}
 		};
 		
