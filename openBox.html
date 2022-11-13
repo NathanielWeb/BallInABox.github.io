@@ -89,7 +89,8 @@
 <body>
 	<h1>These are the two balls that were in your box:</h1>
 	<h2 id="redBall"></h2>
-	<h2 id="greenBall"></h2>		
+	<h2 id="greenBall"></h2>
+	<h2 id="ticketType"></h2>		
 	<script type="text/javascript">
 		let redPile = [0, 1, 2, 3, 3, 10];
 		let greenPile = [0, 1, 2, 3, 3, 10];
@@ -109,11 +110,12 @@
 		if(tickets == "21"){
 			let prizeMultiplier = 3;
 		}
-		let redBall = redPile[(Math.floor(Math.random() * redPile.length))] * prizeMultiplier; 
-		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))] * prizeMultiplier; 
+		let redBall = redPile[(Math.floor(Math.random() * redPile.length))] /* * prizeMultiplier; */
+		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))] /* * prizeMultiplier; */ 
 		//Printing out the values of the red and green ball
 		document.getElementById("redBall").innerHTML = redBall;
 		document.getElementById("greenBall").innerHTML = greenBall;
+		document.getElementById("ticketType").innerHTML = tickets;
 	</script>
 
 
