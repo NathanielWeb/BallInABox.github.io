@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Seven tickets: Ball in a Box</title>	
+	
+	<meta name="description" content="index page">
+	<meta name="author" content="Nathaniel Webster">
+
+
+	<!-- Internal styles not linked -->
+	<style type="text/css">
+		body{
+			text-align: center;
+			background-image: url(https://images4.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			font-family: Allerta, "Varela Round", Voltaire, sans-serif;
+			font-size: 20px;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+		* {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+		/* fluid column layout */
+		.fluid1col, .fluid2col, .fluid3col, .fluid23col, .fluid4col, .fluid5col, .fluid6col, .fluid34col {
+			padding:  10px 10px;
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			float: left;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;	
+		}
+		@media screen and (min-width: 601px) {
+			/* fluid columns */
+			.fluid1col {
+				width: 100%;
+			}
+			.fluid2col {
+				width: 50%;
+			}
+			.fluid23col {
+				width: 66.666666666666666%;
+			}	
+			.fluid3col {
+				width: 33.33333333333%;		
+			}
+			.fluid34col {
+				width: 75%;	
+			}	
+			.fluid4col {
+				width: 25%;	
+			}	
+			.fluid5col {
+				width: 20%;
+			}
+			.fluid6col {
+				width:  16.6666666666%;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			/* fluid columns */
+			.fluid1col, .fluid2col, .fluid3col, .fluid23col, .fluid4col, .fluid5col, .fluid6col, .fluid34col {
+				width:  100%;
+			}
+		}
+		.clear {
+			clear: both;
+		}
+		#faded-background{
+			position: relative;
+			display: inline-block;
+			border-radius: 0.7em;
+			margin-left: auto;
+			margin-right: auto;
+			width: 1000px;
+			padding: 20px;
+			background: rgba(179, 128, 255, 0.8);
+			border: 10px solid #ff751a; /* the values in order are size, style, color */	
+		}
+		.normalImage {
+			border-radius: 0.5em; /* 50% border radius */
+			box-shadow: 0px 0px 10px #333333; /* http://www.css3.info/preview/box-shadow/ */
+			-moz-box-shadow: 0px 0px 10px #333333;
+			-webkit-box-shadow: 0px 0px 10px #333333;
+			padding: 5px; 
+			background-color: #0099ff;
+			width: 400px;
+			height: 300px;
+		}
+		.normalVideo {
+			border-radius: 0.5em; /* 50% border radius */
+			box-shadow: 0px 0px 10px #333333; /* http://www.css3.info/preview/box-shadow/ */
+			-moz-box-shadow: 0px 0px 10px #333333;
+			-webkit-box-shadow: 0px 0px 10px #333333;
+			padding: 5px; 
+			background-color: #0099ff;
+		}
+		.buttons {
+			background: #0031f7;
+			background-image: -webkit-linear-gradient(top, #0031f7, #f01111);
+			background-image: -moz-linear-gradient(top, #0031f7, #f01111);
+			background-image: -ms-linear-gradient(top, #0031f7, #f01111);
+			background-image: -o-linear-gradient(top, #0031f7, #f01111);
+			background-image: linear-gradient(to bottom, #0031f7, #f01111);
+			font-family: Arial;
+			color: #ffffff;
+			font-size: 20px;
+			padding: 10px 20px 10px 20px;
+			text-decoration: none;
+			margin: 10px;
+		}
+
+		.buttons:hover {
+			background: #2a90fc;
+			background-image: -webkit-linear-gradient(top, #2a90fc, #ff2638);
+			background-image: -moz-linear-gradient(top, #2a90fc, #ff2638);
+			background-image: -ms-linear-gradient(top, #2a90fc, #ff2638);
+			background-image: -o-linear-gradient(top, #2a90fc, #ff2638);
+			background-image: linear-gradient(to bottom, #2a90fc, #ff2638);
+			text-decoration: none;
+		}
+		/* default link styles */
+		a:link, a:visited, a:active {
+			color: #333333;
+			text-decoration: underline;
+		}
+		a:hover {
+			color: #ffa500;
+			text-decoration: underline;
+		}
+	</style>
+
+
+</head>
+<body>
+	<h1>You have spent 7 tickets</h1>	
+	<h2>Now choose a box!</h2>
+	<table>
+		<tr>
+			<td>
+				<a href="https://nathanielweb.github.io/BallInABox.github.io/openBox?tickets=7" class="buttons">Box 1</a>
+			</td>
+			<td>
+				<a href="https://nathanielweb.github.io/BallInABox.github.io/openBox?tickets=7" class="buttons">Box 2</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="https://nathanielweb.github.io/BallInABox.github.io/openBox?tickets=7" class="buttons">Box 3</a>
+			</td>
+			<td>
+				<a href="https://nathanielweb.github.io/BallInABox.github.io/openBox?tickets=7" class="buttons">Box 4</a>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				<a href="https://nathanielweb.github.io/BallInABox.github.io/openBox?tickets=7" class="buttons">Box 5</a>
+			</td>
+		</tr>
+	</table>
+</body>
