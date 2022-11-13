@@ -93,7 +93,7 @@
 		let greenPile = [0, 1, 2, 3, 3, 10];
 		const queryStrings = window.location.search;
 
-		const urlVariables = new URLSearchParams(queryString);
+		const urlVariables = new URLSearchParams(queryStrings);
 
 		const tickets = urlVariables.get('tickets')
 
@@ -109,10 +109,10 @@
 		}
 		let redBall = redPile[(Math.floor(Math.random() * redPile.length))* prizeMultiplier];
 		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))*prizeMultiplier];
-		
+
 		//Printing out the values of the red and green ball
 		document.body.innerHTML = "<h2>" + redBall + "</h2>";
-		document.body.innerHTML = "<h2>" + redBall + "</h2>";
+		document.body.innerHTML = "<h2>" + greenBall + "</h2>";
 
 	</script>
 </body>
