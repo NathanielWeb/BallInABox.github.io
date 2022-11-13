@@ -147,25 +147,58 @@
 
 </head>
 <body>
-	<body>
-		<?
-			//The variables for each level
-			$levelOne = $_GET['levelOne'];
-			$levelTwo = $_GET['levelTwo'];
-			$levelThree = $_GET['levelThree'];
-		?>
+	<h1>Welcome to Ball in a Box!!</h1>
+	<h2>How many tickets would you like to spend?</h2>
+
+	<table border="0" cellspacing="2">
+		<tr>
+			<td>
+				<input type="submit" class="buttons" name="sevenTickets" value="7 tickets" />
+			</td>
+			<td>
+				<input type="submit" class="buttons" name="fourteenTickets" value="14 tickets" />
+			</td>
+			<td>
+				<input type="submit" class="buttons" name="twentyOneTickets" value="21 tickets" />
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let type = 0; 
+	</script>
 	<!-- main content -->
-	<div id="container">
-		<a href="#" id="tab">The Tab</a>
-		<h1>Division Tags</h1>
-		<p>This text is inside the main container.  The panels below have a specified class and styles.</p>
-		<div class="panel"><h2>Panel 1</h2><p>Proin commodo dolor vel tellus rutrum pellentesque. Curabitur sit amet ex sit amet nisi vulputate tincidunt sit amet eu augue. Curabitur ornare, sapien eu suscipit ultricies, sapien augue lacinia metus, non ornare nisl quam sed sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque interdum eros at libero dapibus convallis. Donec velit neque, pulvinar pulvinar pellentesque nec, ornare venenatis nisi. Sed vehicula diam eget mi efficitur, sit amet laoreet ante imperdiet.</p></div>
-		<div class="panel"><h2>Panel 2</h2><p>Proin commodo dolor vel tellus rutrum pellentesque. Curabitur sit amet ex sit amet nisi vulputate tincidunt sit amet eu augue. Curabitur ornare, sapien eu suscipit ultricies, sapien augue lacinia metus, non ornare nisl quam sed sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque interdum eros at libero dapibus convallis. Donec velit neque, pulvinar pulvinar pellentesque nec, ornare venenatis nisi. Sed vehicula diam eget mi efficitur, sit amet laoreet ante imperdiet.</p></div>
-		<div class="panel"><h2>Panel 3</h2><p>Proin commodo dolor vel tellus rutrum pellentesque. Curabitur sit amet ex sit amet nisi vulputate tincidunt sit amet eu augue. Curabitur ornare, sapien eu suscipit ultricies, sapien augue lacinia metus, non ornare nisl quam sed sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque interdum eros at libero dapibus convallis. Donec velit neque, pulvinar pulvinar pellentesque nec, ornare venenatis nisi. Sed vehicula diam eget mi efficitur, sit amet laoreet ante imperdiet.</p></div>
-		<div class="panel"><h2>Panel 4</h2><p>Proin commodo dolor vel tellus rutrum pellentesque. Curabitur sit amet ex sit amet nisi vulputate tincidunt sit amet eu augue. Curabitur ornare, sapien eu suscipit ultricies, sapien augue lacinia metus, non ornare nisl quam sed sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque interdum eros at libero dapibus convallis. Donec velit neque, pulvinar pulvinar pellentesque nec, ornare venenatis nisi. Sed vehicula diam eget mi efficitur, sit amet laoreet ante imperdiet.</p></div>
-	</div>
-	<!-- /main content -->
 	
+	<input id="type2" type="submit" class="buttons" name="type2" />
+	<input id="type3" type="submit" class="buttons" name="type3" />
+
+	<script type="text/javascript">
+		let type1 = false;
+		let type2 = false;
+		let type3 = false; 
+		document.getElementById('type1').onclick = function() {
+			alert("type 1 game");
+			type1 = true;
+			if (type1) {
+
+			}
+		};
+		
+	</script>
+
+
+
+
+
+
+
+
+
+
+	<button>
+	</button>
+	
+	<!-- /main content -->
+
 	<!-- load jquery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
