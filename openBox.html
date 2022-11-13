@@ -87,7 +87,9 @@
 
 </head>
 <body>
-	<h1>These are the two balls that were in your box:</h1>	
+	<h1>These are the two balls that were in your box:</h1>
+	<h2 id="redBall"></h2>
+	<h2 id="greenBall"></h2>		
 	<script type="text/javascript">
 		let redPile = [0, 1, 2, 3, 3, 10];
 		let greenPile = [0, 1, 2, 3, 3, 10];
@@ -111,9 +113,9 @@
 		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))] * prizeMultiplier;
 
 		//Printing out the values of the red and green ball
-		document.body.innerHTML = "<h2>" + redBall + "</h2>";
-		document.body.innerHTML = "<h2>" + greenBall + "</h2>";
-		document.body.innerHTML = "<h2>HELLO</h2>";
-
+		document.getElementById("redBall").innerHTML = redBall;
+		document.getElementById("greenBall").innerHTML = greenBall;
 	</script>
+
+
 </body>
