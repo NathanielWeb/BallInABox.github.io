@@ -109,8 +109,8 @@
 		if(tickets == 21){
 			let prizeMultiplier = 3;
 		}
-		let redBall = Math.floor(Math.random() * redPile.length); /*redPile[(Math.floor(Math.random() * redPile.length))] * prizeMultiplier; */
-		let greenBall = Math.floor(Math.random() * greenPile.length); /* greenPile[(Math.floor(Math.random() * greenPile.length))] * prizeMultiplier; */
+		let redBall = redPile[2]; /*redPile[(Math.floor(Math.random() * redPile.length))] * prizeMultiplier; */
+		let greenBall = greenPile[2]; /* greenPile[(Math.floor(Math.random() * greenPile.length))] * prizeMultiplier; */
 
 		//Printing out the values of the red and green ball
 		document.getElementById("redBall").innerHTML = redBall;
