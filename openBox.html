@@ -97,7 +97,7 @@
 
 		const urlVariables = new URLSearchParams(queryStrings);
 
-		const tickets = urlVariables.get('tickets')
+		const tickets = urlVariables.get('tickets');
 
 		/*If 7 tickets we mutiply prizes by 1, if 14 multiply by 2, if 21 multiply by 3 */
 		if(tickets == 7){
@@ -113,7 +113,7 @@
 		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))] * prizeMultiplier; 
 		//Printing out the values of the red and green ball
 		document.getElementById("redBall").innerHTML = prizeMultiplier;
-		document.getElementById("greenBall").innerHTML = greenBall;
+		document.getElementById("greenBall").innerHTML = tickets;
 	</script>
 
 
