@@ -101,15 +101,15 @@
 		const tickets = urlVariables.get('tickets');
 
 		/*If 7 tickets we mutiply prizes by 1, if 14 multiply by 2, if 21 multiply by 3 */
+		let prizeMultiplier = 0;
 		if(tickets == "7"){
-			document.getElementById("ticketType").innerHTML = "Got here!";
-			let prizeMultiplier = 1;
+			var prizeMultiplier = 1;
 		}
 		if(tickets == "14"){
-			let prizeMultiplier = 2;
+			var prizeMultiplier = 2;
 		}
 		if(tickets == "21"){
-			let prizeMultiplier = 3;
+			var prizeMultiplier = 3;
 		}
 		let redBall = redPile[(Math.floor(Math.random() * redPile.length))]; /* * prizeMultiplier; */
 		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))]; /* * prizeMultiplier; */ 
