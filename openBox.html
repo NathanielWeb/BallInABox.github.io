@@ -148,11 +148,15 @@
 
 			if (tickets > SumOfBalls) {
 				netEarnings = tickets - SumOfBalls;
-				document.getElementById("netEarnings").innerHTML = "Which means that overall, you have lost " + netEarnings + " tickets!";
+				document.getElementById("netEarnings").innerHTML = "Which means that you have a net loss of" + netEarnings + " tickets!";
 			}
 			else if (tickets < SumOfBalls) {
 				netEarnings = SumOfBalls - tickets;
-				document.getElementById("netEarnings").innerHTML = "Which means that overall, you have won " + netEarnings + " tickets!";
+				document.getElementById("netEarnings").innerHTML = "Which means that you have a net profit of" + netEarnings + " tickets!";
+			}
+			else {
+				netEarnings = SumOfBalls - tickets;
+				document.getElementById("netEarnings").innerHTML = "Which means that you have net zero tickets";
 			}
 		</script>
 	</div>
