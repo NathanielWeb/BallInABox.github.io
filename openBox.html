@@ -90,7 +90,7 @@
 	<h1>These are the two balls that were in your box:</h1>
 	<h2 id="redBall"></h2>
 	<h2 id="greenBall"></h2>
-	<h2 id="ticketType"></h2>		
+	<h2 id="ticketType">Nothing to see here</h2>		
 	<script type="text/javascript">
 		let redPile = [0, 1, 2, 3, 3, 10];
 		let greenPile = [0, 1, 2, 3, 3, 10];
@@ -98,25 +98,14 @@
 
 		const urlVariables = new URLSearchParams(queryStrings);
 
-		const tickets = urlVariables.get('tickets');
+		const tickets = parseInt(urlVariables.get('tickets'));
 
 		/*If 7 tickets we mutiply prizes by 1, if 14 multiply by 2, if 21 multiply by 3 */
-		let prizeMultiplier = 0;
-		if(tickets == "7"){
-			var prizeMultiplier = 1;
-		}
-		if(tickets == "14"){
-			var prizeMultiplier = 2;
-		}
-		if(tickets == "21"){
-			var prizeMultiplier = 3;
-		}
-		let redBall = redPile[(Math.floor(Math.random() * redPile.length))]; /* * prizeMultiplier; */
-		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))]; /* * prizeMultiplier; */ 
+		let redBall = redPile[(Math.floor(Math.random() * redPile.length))] * (tickets/7); /* * prizeMultiplier; */
+		let greenBall = greenPile[(Math.floor(Math.random() * greenPile.length))] * (tickets/7); /* * prizeMultiplier; */ 
 		//Printing out the values of the red and green ball
 		document.getElementById("redBall").innerHTML = redBall;
 		document.getElementById("greenBall").innerHTML = greenBall;
-		document.getElementById("ticketType").innerHTML = prizeMultiplier;
 	</script>
 
 
