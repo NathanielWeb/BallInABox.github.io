@@ -39,6 +39,26 @@
 			background: rgba(179, 128, 255, 0.8);
 			border: 10px solid #ff751a; /* the values in order are size, style, color */	
 		}
+		.redBalls {
+			font-family: Arial;
+			color: #ffffff;
+			font-size: 20px;
+			padding: 10px 20px 10px 20px;
+			text-decoration: none;
+			margin: 10px;
+			border-radius: 50%;
+			background-color: #cc0000;
+		}
+		.greenBalls {
+			font-family: Arial;
+			color: #ffffff;
+			font-size: 20px;
+			padding: 10px 20px 10px 20px;
+			text-decoration: none;
+			margin: 10px;
+			border-radius: 50%;
+			background-color: #33cc33;
+		}
 		.normalImage {
 			border-radius: 0.5em; /* 50% border radius */
 			box-shadow: 0px 0px 10px #333333; /* http://www.css3.info/preview/box-shadow/ */
@@ -90,8 +110,8 @@
 	<h1>These are the two balls that were in your box:</h1>
 	
 	<!--This is where the javascript values will go -->
-	<h2 id="redBall"></h2>
-	<h2 id="greenBall"></h2>
+	<h2 id="redBall" class="redBalls"></h2>
+	<h2 id="greenBall" class="greenBalls"></h2>
 	<h2 id="SumOfBalls"></h2>
 	<h2>Would you like to try again?</h2>
 	<a href="https://nathanielweb.github.io/BallInABox.github.io/">Yes</a>	
